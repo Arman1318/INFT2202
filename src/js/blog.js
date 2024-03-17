@@ -16,7 +16,6 @@ function fetchData(container) {
 }
 
 
-
 function makeCard(post) {
     const card = document.createElement('div');
     card.classList.add('card', 'mb-3');
@@ -39,4 +38,9 @@ function makeCard(post) {
     card.appendChild(cardBody);
 
     return card;
+}
+
+function initializeApp() {
+    const blogContainer = document.querySelector('.blog-data');
+    fetchData(blogContainer);
 }
