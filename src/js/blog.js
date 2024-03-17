@@ -14,3 +14,14 @@ function fetchData(container) {
             console.error('Error fetching posts:', error);
         });
 }
+
+
+
+function makeCard(post) {
+    const card = document.createElement('div');
+    card.classList.add('card', 'mb-3');
+
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
+
+}
