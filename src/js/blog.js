@@ -24,4 +24,19 @@ function makeCard(post) {
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
 
+    
+    const title = document.createElement('h2');
+    title.classList.add('card-title');
+    title.textContent = post.title;
+
+    const body = document.createElement('p');
+    body.classList.add('card-text');
+    body.textContent = post.body;
+
+    cardBody.appendChild(title);
+    cardBody.appendChild(body);
+
+    card.appendChild(cardBody);
+
+    return card;
 }
