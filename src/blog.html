@@ -1,98 +1,80 @@
+<!-- 
+ * Name: Arman Dodhiya
+ * Student ID: 100865197
+ * Date Completed: March 17, 2024
+ -->
+<!-- Starting of HTML -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
-    <style>
-        body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #140101;
-            color: rgb(241, 236, 236);
-            padding: 10px;
-            text-align: center;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        article {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-
-        h2 {
-            color: #574d4d;
-        }
-
-        p {
-            color: #997e7e;
-        }
-
-        a {
-            color: #0a1e33;
-            text-decoration: none;
-        }
-        .back-link {
-            margin: 20px auto;
-            padding: 10px;
-            font-size: small;
-            text-decoration: none;
-            background-color: #2a2b2d;
-            color: rgb(243, 239, 239);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            width: fit-content;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./css/css.css">
 </head>
+
 <body>
+  <!-- Main Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4c0 1.1.9 2 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.8-3.1a5.5 5.5 0 0 0-2.8-6.3c.6-.4 1.3-.6 2-.6a3.5 3.5 0 0 1 .8 6.9Zm2.2 7.1h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1l-.5.8c1.9 1 3.1 3 3.1 5.2ZM4 7.5a3.5 3.5 0 0 1 5.5-2.9A5.5 5.5 0 0 0 6.7 11 3.5 3.5 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4c0 1.1.9 2 2 2h.5a6 6 0 0 1 3-5.2l-.4-.8Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <b class="w-6 h-6 text-gray-800 dark:text-white">Arman Blog </b>
+          </a>
+          <a class="nav-link" href="home.html"
+            ><i class="fa-solid fa-project-diagram"></i> Home
+          </a>
+          <a class="nav-link" href="portfolio.html"
+            ><i class="fa-solid fa-info"></i> Portfolio
+          </a>
+          <a class="nav-link" href="service.html"
+            ><i class="fa-solid fa-map-signs"></i> Services
+          </a>
+          <a class="nav-link" href="blog.html"
+            ><i class="fa-solid fa-project-diagram"></i> Blog
+          </a>
+          <a href="login.html">Login</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+ 
+<!-- Giving the ID to recongnize the error message -->
+<div>
+  <figure>
+    <img id="pixabay-logo" src="./images/pixabay.svg" alt="pixabay logo" style="width: 100px; height: auto;">
+    <figcaption>All Details provided by pixabay</figcaption>
+  </figure>
+</div>
+<div class = "blog-column"></div>
+   
 
-<header>
-    <h1>BLOG BY ARMAN </h1>
-</header>
-
-<main>
-    <article>
-        <h2>blog STarter HTML</h2>
-        <p>HTML FOR BEGINNERS, INCLUDES TAGS FOR HTML5.</p>
-        <a href="https://www.theblogstarter.com/html-for-beginners/">Read More</a>
-    </article>
-
-    <article>
-        <h2>FRANK M TAYLOR </h2>
-        <p>JAVASCRIPT.</p>
-        <a href="https://blog.frankmtaylor.com/category/web/code-and-development/javascript/">Read More</a>
-    </article>
-
-    <article>
-        <h2>CSS HUBSPOT</h2>
-        <p>The Ultimate CSS Tutorial for Beginner Programmers.</p>
-        <a href="https://blog.hubspot.com/website/css-tutorial">Read More</a>
-    </article>
-
-    <article>
-        <h2>ReactJS</h2>
-        <p> Blog app using ReactJS </p>
-        <a href="https://www.geeksforgeeks.org/blog-app-using-reactjs/">Read More</a>
-    </article>
-
-    <a href="./index.html" class="back-link">Back to Homepage</a>
-</main>
-
+  <!-- Script Section-->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/js.js"></script>
+  <script src="./js/register.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/blog.js"></script>
 </body>
+
 </html>

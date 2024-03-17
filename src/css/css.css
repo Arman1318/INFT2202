@@ -57,6 +57,12 @@ h1 {
     margin-bottom: 15px;
 }
 
+.blog-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 .portfolio-section {
     display: flex;
     flex-wrap: wrap;
