@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', initializeApp);
 
 function initializeApp() {
-    const blogContainer = document.querySelector('.blog-column');
+    const blogContainer = document.querySelector('.blog-data');
     fetchData(blogContainer);
 }
 
