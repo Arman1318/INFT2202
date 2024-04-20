@@ -1,0 +1,20 @@
+ {{!-- Author: Arman Dodhiya
+  Student ID: 100865197
+  Date Completed: 2024-04-19 --}}
+
+  {{!-- I took help from blackbox to create this class --}}
+
+<h1>Animal List</h1>
+<ul>
+  {{#each animals}}
+    <li>
+      <a href="/animals/{{_id}}">{{commonName}}</a>
+      <a href="/animals/{{_id}}/edit">Edit</a>
+      <form action="/animals/{{_id}}" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  {{/each}}
+</ul>
+<a href="/animals/create">Add New Animal</a>

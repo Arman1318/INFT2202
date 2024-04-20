@@ -1,0 +1,16 @@
+{
+    "name": "Lab4_ArmanDodhiya",
+    "version": "1.0.0",
+    "description": "MVC Application",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "ejs": "^3.1.10",
+        "express": "^4.19.2",
+        "mongodb": "^6.5.0",
+        "mongoose": "^6.12.8"
+    }
+}
